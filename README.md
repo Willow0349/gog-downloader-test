@@ -11,8 +11,11 @@ Only in gogrepoc/control_ultimate_edition/: patch_control_ultimate_edition_Updat
 Only in lgogdownloader-3.12/control_ultimate_edition/: patches
 ```
 Second diff after doing 
-`$ mv lgogdownloader-3.12/control_ultimate_edition/patches/patch_control_ultimate_edition_Update_1_\(41028\)_to_Update_2_\(41492\).exe lgogdownloader-3.12/control_ultimate_edition/`
-and `rm -r lgogdownloader-3.12/control_ultimate_edition/patches/`: 
+```
+$ mv lgogdownloader-3.12/control_ultimate_edition/patches/patch_control_ultimate_edition_Update_1_\(41028\)_to_Update_2_\(41492\).exe lgogdownloader-3.12/control_ultimate_edition
+$ rm -r lgogdownloader-3.12/control_ultimate_edition/patches/
+```
+looks like this: 
 ```
 $ diff lgogdownloader-3.12/control_ultimate_edition/ gogrepoc/control_ultimate_edition/
 Only in gogrepoc/control_ultimate_edition/: !images
