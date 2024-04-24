@@ -1,6 +1,7 @@
-I downloaded [control ultimate edition](https://www.gog.com/game/control_ultimate_edition) using both [lgogdownloader](https://github.com/Sude-/lgogdownloader/tree/master) and [gogrepoc](https://github.com/Kalanyr/gogrepoc).
-When doing the initial library scan `lgogdownloader --list` compared to `python3 gogrepoc.py update`  gogrepoc was much slower parsing the library data (i have not looked into what the tools exactly do so it might not be identical) 
-but lgogdownloader was a few seconds compared to ~5 minutes for gogrepoc to parse the library (again i am not sure they are doing exactly the same). The download test i performed was done using 4 threads for each of them,
+I downloaded [control ultimate edition](https://www.gog.com/game/control_ultimate_edition) using both [lgogdownloader](https://github.com/Sude-/lgogdownloader/tree/master) and [gogrepoc](https://github.com/Kalanyr/gogrepoc).  
+The short answer is lgogdownloader: 19m37.732s gogrepoc: 18m12.346s (within margin of error)  
+Long Answer when doing the initial library scan `lgogdownloader --list` compared to `python3 gogrepoc.py update`  gogrepoc was much slower parsing the library data (i have not looked into what the tools exactly do so it might not be identical)
+but lgogdownloader was a few seconds compared to ~5 minutes for gogrepoc to parse the library (again i am not sure they are doing exactly the same). The download test i performed was done using 4 threads for each of them.  
 I also did a diff after the download where the only difference was gogrepoc downloading metadata and the different folder structure for how they save the patches, but both downloaded the patch. Here is the first diff:
  ```
 $ diff lgogdownloader-3.12/control_ultimate_edition/ gogrepoc/control_ultimate_edition/
@@ -48,9 +49,9 @@ user0m59.304s
 sys1m23.422s
 ```
 
-gogrepoc (i have the full output but it is ~5000 lines):
+gogrepoc (full output is in "gogrepoc.txt" but it is ~5000 lines):
 ```
-$ time python3 gogrepoc.py download -ids control_ultimate_edition -os windows > control-test.txt
+$ time python3 gogrepoc.py download -ids control_ultimate_edition -os windows
 real18m12.346s
 user8m29.640s
 sys4m27.027s
