@@ -1,0 +1,25 @@
+$ time lgogdownloader --download --game control_ultimate_edition
+Getting game names (2/2) 95 / 95
+Getting game info 1 / 1
+Total size: 26.19 GB
+2024-Apr-24 20:00:36 [Thread #0] Download complete: setup_control_ultimate_edition_update_2_(41492).exe (@ 2.88MB/s)
+2024-Apr-24 20:12:32 [Thread #3] Download complete: setup_control_ultimate_edition_update_2_(41492)-3.bin (@ 5.71MB/s)
+2024-Apr-24 20:12:33 [Thread #1] Download complete: setup_control_ultimate_edition_update_2_(41492)-1.bin (@ 5.71MB/s)
+2024-Apr-24 20:12:33 [Thread #2] Download complete: setup_control_ultimate_edition_update_2_(41492)-2.bin (@ 5.71MB/s)
+2024-Apr-24 20:12:33 [Thread #0] Download complete: setup_control_ultimate_edition_update_2_(41492)-4.bin (@ 5.71MB/s)
+2024-Apr-24 20:12:59 [Thread #0] Download complete: patch_control_ultimate_edition_Update_1_(41028)_to_Update_2_(41492).exe (@ 5.68MB/s)
+2024-Apr-24 20:12:59 [Thread #0] Finished all tasks
+2024-Apr-24 20:17:20 [Thread #2] Download complete: setup_control_ultimate_edition_update_2_(41492)-7.bin (@ 7.37MB/s)
+2024-Apr-24 20:17:20 [Thread #2] Finished all tasks
+2024-Apr-24 20:20:08 [Thread #3] Download complete: setup_control_ultimate_edition_update_2_(41492)-5.bin (@ 9.03MB/s)
+2024-Apr-24 20:20:08 [Thread #3] Finished all tasks
+2024-Apr-24 20:20:08 [Thread #1] Download complete: setup_control_ultimate_edition_update_2_(41492)-6.bin (@ 9.02MB/s)
+2024-Apr-24 20:20:08 [Thread #1] Finished all tasks
+#0: Finished
+#1: Finished
+#2: Finished
+#3: Finished
+
+real	19m37.732s
+user	0m59.304s
+sys	1m23.422s
